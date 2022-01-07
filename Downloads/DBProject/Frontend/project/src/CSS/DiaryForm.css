@@ -1,0 +1,202 @@
+.diaryFormContainer {
+    position: fixed;
+    top: 0%;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.2);
+    z-index: 10;
+}
+
+.diaryForm {
+    width: 70%;
+    height: calc(100vh * 0.8);
+    background: white;
+    padding: 20px 10px 20px 20px;
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 3px;
+}
+
+.diaryFormComp {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.diaryFormGroup, .content{
+    display: flex;
+    flex-direction: row;
+}
+
+.diaryFormGroup {
+    margin-bottom: 20px;
+}
+
+.label {
+    font-size: 1.2rem
+}
+
+.diaryContentContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.diaryContentWrapper {
+    width: 70%;
+}
+
+.diaryTextArea {
+    display: block;
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    box-sizing: border-box;
+    resize: none;
+    font-size: 1rem;
+    line-height: 28px;
+    padding: 10px;
+    text-indent: 30px;
+    border: 1px solid rgba(0,0,0,0.2);
+    white-space: pre-wrap;
+}
+
+.diarySideContent {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0 10px;
+}
+
+.diaryBtnGroup {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 50%;
+}
+
+.diaryImageInput::-webkit-file-upload-button {
+    padding: 5px;
+    border-radius: 3px;
+    background: none;
+    background-color: var(--primary-theme-color);
+    color: white;
+    font-size: 0.8rem;
+    border: none;
+    margin-top: 5px;
+}
+
+.diaryImageInput:hover {
+    cursor: pointer;
+}
+
+.diaryImageUploader {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.diaryImageContainer {
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 3px;
+}
+
+.diaryImageInput {
+    height: 20%;
+    display: block;
+}
+
+.diaryImage {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.Btns {
+    font-size: 1.1rem;
+    padding: 10px;
+    color: white;
+    border-radius: 3px;
+}
+
+.cancelBtn, .deleteBtn {
+    background: var(--secondary-theme-color);
+}
+
+.addBtn {
+    background: var(--primary-theme-color)
+}
+
+.Btns:hover {
+    cursor: pointer;
+    text-shadow: 0px 0px 1px rgba(0,0,0,1);
+}
+
+.diarySignature {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.diaryDetails {
+    font-size: 1rem;
+}
+
+.diaryInputs {
+    font-size: 1rem;
+    background: rgba(0,0,0,0.1);
+    margin-left: 5px;
+    padding: 5px;
+    border-radius: 3px;;
+    border: 1px solid transparent
+}
+
+.diaryInputs:focus {
+    background-color: white;;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+
+.diaryTitle {
+    display: flex;
+    align-items: center;
+}
+
+.recipientInput, .signatureInput {
+    width: 90px !important;
+}
+
+.signatureInput {
+    margin-left: 0;
+}
+
+.alertWrapper {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center; 
+    margin-top: 10px;
+}
+

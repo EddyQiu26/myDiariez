@@ -1,0 +1,132 @@
+.filterFormContainer {
+    position: fixed;
+    top: 0%;
+    left:0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.2);
+    z-index: 10;
+}
+
+.filterForm {
+    width: 50%;
+    background: white;
+    padding: 20px 20px 20px 20px;
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 3px;
+}
+
+.fform {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    font-size: 1.2rem;
+    overflow: hidden;
+    align-items: flex-start;
+}
+
+.filterFields {
+    width: 100%;
+}
+
+select {
+    appearance: none;
+    padding: 10px 15px;
+    border: 1px solid rgba(0,0,0,0.2);
+    font-size: 1rem;
+    border-radius: 3px !important;
+}
+.filterGroups {
+    margin-bottom: 30px;
+}
+
+.filterOptionContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.optionSelect, .keyword {
+    margin-left: 10px;
+}
+
+.filterLabels {
+    margin-bottom: 10px;
+}
+
+.keyword {
+    font-size: 1rem;
+    background: rgba(0,0,0,0.1);
+    padding: 5px;
+    border-radius: 3px;;
+    border: 1px solid transparent
+}
+
+.keyword:focus {
+    background-color: white;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+
+.filterBtnGroup {
+    width: 100%;
+}
+
+.filterFormBtns {
+    font-size: .9rem;
+    padding: 10px;
+    color: white;
+    border-radius: 3px;
+}
+
+.filterFormBtns:hover {
+    cursor: pointer;
+    text-shadow: 0px 0px 1px rgba(0,0,0,0.2);
+}
+
+#filterSubmit {
+    background: var(--primary-theme-color);
+}
+
+#filterCancel {
+    background-color: var(--secondary-theme-color);
+    margin-left: 20px;
+}
+
+.dateSelect {
+    appearance: none;
+    padding: 10px;
+    background-color: white;;
+    color: black;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 3px;
+    font-size: 1rem;
+}
+
+.dateSelect:hover {
+    cursor: pointer;
+}
+
+.dateSelectGroup {
+    display: flex;
+    align-items: center;
+}
+
+.dateSelectGroup:last-child {
+    margin-left: 20px;
+}
+
+.dateLabels {
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+#dateNote {
+    font-size: 0.9rem;
+    margin-top: 15px;
+    opacity: .7;
+}

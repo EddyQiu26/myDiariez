@@ -1,0 +1,99 @@
+.formOverlay {
+    position: absolute;
+    width: 50%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 50%;
+    background-color: var(--secondary-theme-color);
+}
+
+.formOverlayTwo {
+    position: absolute;
+    background-color: var(--secondary-theme-color);
+    width: 50%;
+    top: 0;
+    bottom: 0;
+    right: 50%;
+    left: 0%;
+}
+
+.overlayContent {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 20px;
+}
+
+.overlayText {
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.overlayText, .overlayBtn {
+    color: white;
+}
+
+.overlayBtn {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    background: var(--primary-theme-color);
+    padding: 15px 20px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+.overlayBtn:hover {
+    cursor: pointer;
+    text-shadow: 0px 0px 2px black;
+}
+
+.switchFormAnimationPrimary {
+    animation: switchFormAnimationPrimary .5s forwards ease-out;
+}
+
+.switchFormAnimationSecondary {
+    animation: switchFormAnimationSecondary .5s forwards ease-out;
+}
+
+.initFormAnimation {
+    animation: initFormAnimation .5s forwards ease-out;
+}
+
+@keyframes initFormAnimation {
+    from {
+        right: 50%;
+        left: 0;
+        background-color: var(--primary-theme-color);
+    }
+    to {
+        right: 0;
+        left: 50%;
+        background-color: var(--secondary-theme-color);
+    }
+}
+
+@keyframes switchFormAnimationPrimary {
+    from {
+        right: 0;
+        left: 50%;
+        background-color: var(--secondary-theme-color);
+    }
+    to {
+        right: 50%;
+        left: 0;
+        background-color: var(--primary-theme-color);
+    }
+}
+
+@keyframes switchFormAnimationSecondary {
+    from {
+        background-color: var(--primary-theme-color);
+    }
+    to {
+        background-color: var(--secondary-theme-color);
+    }
+}

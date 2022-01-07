@@ -1,0 +1,91 @@
+.regFormContainer {
+    width: 50%;
+    height: 100%;
+    padding: 40px 20px;
+}
+
+.spRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.rowGroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.rowContainer {
+    width: 48%;
+}
+
+.pwdNotesContainer {
+    width: 100%;
+}
+
+.regHeader {
+    text-align: center;
+    color: var(--secondary-theme-color)
+}
+
+.regLabel {
+    color: var(--secondary-theme-color)
+}
+
+.regForm {
+    font-size: 1.2rem;
+}
+
+.formGroup {
+    margin: 0 0 20px 0;
+}
+
+.regInput {
+    width: 100%;
+    height: 25px;
+    border: 2px solid var(--secondary-theme-color);
+    border-radius: 3px;
+    padding: 20px 5px;
+    margin-top: 5px;
+    font-size: 0.9rem;
+    transition: border 100ms linear;
+}
+
+.regInput:focus {
+    border-top: 2px solid transparent;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid var(--primary-theme-color);
+    transition: all 100ms linear;
+}
+
+.regBtn {
+    color: white;
+    background-color: var(--primary-theme-color);
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border-radius: 3px;
+}
+
+.regBtn:hover {
+    cursor: pointer;
+    text-shadow: 0px 0px 1px rgba(0,0,0,1);
+}
+
+.pwdNotes {
+    font-size: 0.8rem;
+    color: rgba(0,0,0,0.3)
+}
+
+.pwdNotesContainer {
+    margin-top: 5px;
+}
+
+.pwdReqSatisfied {
+    color: green
+}
+
+.pwdNotClean {
+    color: red;
+}

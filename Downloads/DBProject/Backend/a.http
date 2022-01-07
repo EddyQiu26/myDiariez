@@ -1,0 +1,21 @@
+GET http://localhost:5000/diary/a HTTP/1.1
+
+###
+
+GET http://localhost:5000/diary/all HTTP/1.1
+
+### 
+
+post http://localhost:5000/diary/filter
+
+Content-Type: application/json
+
+{
+    "fieldScopeSelect": "contains",
+    "fieldSelect": "title",
+    "keywords": "content",
+    "dateSelectFrom": "2021-11-01",
+    "dateSelectTo": "2021-11-07",
+    "userId":"618201ff17826b65ff57d6ad",
+    "filterCategory":"all"
+}

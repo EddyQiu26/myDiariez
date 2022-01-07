@@ -1,0 +1,84 @@
+.miniDiaryContainer {
+    border: 1px solid rgba(0,0,0,.2);
+    height: 250px;
+    border-radius: 3px;
+}
+
+.miniDiaryImageContainer {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50%;
+    width: 100%;
+    background-position: center;
+    border-bottom: 1px solid rgba(0,0,0,.2);
+    opacity: 0.6;
+}
+
+.miniDiaryContainer:hover {
+    cursor: pointer;
+    border: 1px solid transparent;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
+}
+
+.miniDiaryContainer:hover .miniDiaryImageContainer {opacity: 1;}
+
+.miniDiaryNoImageContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    border-bottom: 1px solid rgba(0,0,0,.2);
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.miniDiaryContentContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px 10px 10px;
+    width: 100%;
+    height: 50%;
+}
+
+.miniDiaryContentHeaderContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 30%;
+}
+
+.miniDiaryTitle, .miniDiaryDate {
+    font-size: 1.1rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.miniDiaryTitle {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: left;
+    width: 45%;
+}
+
+.miniDiaryDate {
+    text-align: right;
+    width: 55%;
+    flex-direction: row-reverse;
+}
+
+.miniDiaryContent {
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+    opacity: .7;
+    line-height: 1.25rem;
+}
+
+.miniDiaryContainer:hover .miniDiaryContent {
+    opacity: 1;
+}

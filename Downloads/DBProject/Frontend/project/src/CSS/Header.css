@@ -1,0 +1,16 @@
+#header {
+    width: 100%;
+    height: 100px;
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-theme-color);
+    color: white;
+    font-weight: bold;
+    font-size: 1.8rem;
+    justify-content: space-between;
+}
+
+#headerText:hover {
+    cursor: pointer;
+}
